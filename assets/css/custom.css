@@ -1,0 +1,17 @@
+.navbar {
+    background-color: #000000;
+    position: absolute;
+}
+
+.navbar .nav > li a {
+     display: block;
+     height: 80px;
+     text-align: center;
+     padding-top: 30px;
+    font-weight: 700;
+     color: #FFFFFF;
+}
+
+h2{
+    text-align: center;
+}

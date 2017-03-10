@@ -6,37 +6,149 @@
     <meta name="viewport" content="width=device-width, inital-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target="#navbar">
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
+<body data-spy="scroll" data-target="#navbar-scroll">
+    
+<nav class="navbar navbar-default" id="navbar-scroll" role="navigation">
         <!--Navigation bar for mobile-->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-bar-content">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
         </div>
-
+        
         <!--Navigation Vertical Bar-->
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-stacked">
-                <li class="active"><a href="#section1"> About Me </a></li>
-                <li class="active"><a href="#section1"> section1</a></li>
-                <li class="active"><a href="#section2"> section2</a></li>
-                <li class="active"><a href="#section3"> section3</a></li>
+        <div id="nav-bar-content" class="collapse navbar-collapse">
+            <ul class="nav navbar-stacked" >
+                <li class="active"><a href="#section1">About Me</a></li>
+                <li><a href="#section2">Experience</a></li>
+                <li><a href="#section3">Education</a></li>
+                <li><a href="#section4">section3</a></li>
             </ul>
         </div>
-    </div>
 </nav>
-
-<div class="container">
+<!--
+<div id="section0" class="terminal">
     <h2>About Me</h2>
+    <blink><h3>I am Computer Programmer</h3></blink>
 </div>
+-->
+
+<div id="section1" class="about-me">
+    <div profile="aboutme"class="container">
+        <h2>About Me</h2>
+        <h3>I am Computer Programmer</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <h3> Specifics</h3>
+                <p>
+                    <strong>Name:</strong>
+                    <br>
+                    Rodolfo Roberto Ballesteros
+                    <br>
+                    <strong>Location:</strong>
+                    <br>
+                    Skokie, IL
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img class="img-circle" src="assets/me.jpg" width="300px" height="300px">
+            </div>
+            <div class="col-md-4">
+
+                <h3>Background</h3>
+                <p>
+                    I am currently a Software Developer for Allstate Innovations R&D.
+                    I just graduated from the University of Illinois in Urbana-Champaign this passed May.
+                    I have a passion for Cyber-Security and Android Development.
+                    I love any opportunity to learn and create.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="section2" class="experience">
+    <div class="container">
+        <h2>Experience</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <p>
+                    <strong>Allstate | Northbrook, IL</strong>
+                    <br>
+                    Software Developer | Innovation R&D
+                    <br>
+                    June 2016 - Present
+                </p>
+            </div>
+            <div class="col-md-8">
+                 <ul>
+                    <li>Researching and Developing new product offering for Allstate</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p>
+                    <strong>Capital One | Champaign, IL</strong>
+                    <br>
+                    Software Engineer Intern 
+                    <br>
+                    February 2016 - May 2016
+                </p>
+            </div>
+            <div class="col-md-8">
+                  <ul>
+                    <li>Developed an internal Android Application used for company wide communication</li>
+                </ul>
+            </div>
+        </div>
+            <div class="row">
+            <div class="col-md-4">
+                <p>
+                    <strong>Allstate | Northbrook, IL</strong>
+                    <br>
+                    Software Developer Intern | Innovation R&D
+                    <br>
+                    May 2015 - August 2015
+                </p>
+            </div>
+            <div class="col-md-8">
+                 <ul>
+                    <li>Implemented an Android and C++ application to 3D map and virtualized environments using the Google Tango Tablet and Oculus Rift</li>
+                    <li>Developed a web-application using the MEAN(MongoDB, Express, Angular, Node.js) stack with 3 other interns</li>
+                    <li>Lead a team of 4 interns in creating an Android application from concept to prototype during an internal 3 day hackathon</li>
+                    <li>Pitched Proof of Concepts to business Leaders</li>
+                </ul>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-md-4">
+                <p>
+                    <strong>UIUC - Techology Services - ICS | Champaign, IL</strong>
+                    <br>
+                        Site Consultant
+                    <br>
+                    April 2013 - May 2016
+                </p>
+            </div>
+            <div class="col-md-8">
+                <ul>
+                    <li>Troubleshooted computers with Windows and Mac operating systems</li>
+                    <li>Troubleshooted computer hardware and network connectivity</li>
+                    <li>Provided customer service for hundreds of students</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Scripts -->
-<script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery-3.1.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>

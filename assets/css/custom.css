@@ -88,7 +88,7 @@ body {
 
 /**********Style for About Me**********/
 
-.about-me {
+#aboutme {
     background: #607D8B;
     color: #ECEFF1;
     z-index: 900;
@@ -105,7 +105,7 @@ body {
 
 /**********Style for Experience**********/
 
-.experience {
+#experience {
     z-index: 800;
     position: relative;
 }
@@ -117,7 +117,7 @@ body {
 
 /**********Style for Projects**********/
 
-.projects {
+#projects {
     background-color: cornsilk;
     z-index: 700;
     position: relative;
@@ -125,6 +125,11 @@ body {
 
 
 /**********Style for Skills**********/
+
+#skills {
+    z-index: 600;
+    position: relative;
+}
 
 .progress-bar-label {
     float: left;
@@ -135,10 +140,10 @@ body {
 
 /**********Style for Contacts**********/
 
-.contact {
+#contact {
     background-color: firebrick;
     color: white;
-    z-index: 600;
+    z-index: 500;
 }
 
 .contact .row {
@@ -167,6 +172,6 @@ body {
 
 @media (max-width:767px) {
     #email {
-       font-size: 18px;
+        font-size: 18px;
     }
 }

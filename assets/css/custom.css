@@ -1,36 +1,33 @@
-h1{
-}
+h1 {}
 
-h2{
+h2 {
     text-align: center;
     font-size: 55px;
 }
-h3{
-    
-}
 
-h4{
+h3 {}
+
+h4 {
     text-align: center;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 5px;
 }
 
-.box-shadow{
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.box-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.container{
+.container {
     padding-left: 125px;
     padding-right: 125px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-@media (max-width:767px){
-    .container{ 
+@media (max-width:767px) {
+    .container {
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 30px;
@@ -48,8 +45,12 @@ body {
     z-index: 1000;
 }
 
-@media (max-width: 767px){
-    .navbar { 
+#nav-bar-content {
+    padding: 0px;
+}
+
+@media (max-width: 767px) {
+    .navbar {
         left: 0%;
         top: 0px;
         margin-bottom: 0px;
@@ -59,26 +60,21 @@ body {
     }
 }
 
-
 .nav {
     padding: 0px;
-
 }
 
-.navbar .nav > li a {
+.navbar .nav>li a {
     height: 70px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 25px;
     font-weight: 700;
     color: black;
 }
 
-.active > a{
-    background: gray;
+.active>a {
+    background: silver;
 }
-
-
-
 
 .terminal {
     background-color: #000;
@@ -89,13 +85,17 @@ body {
     height: 800px;
 }
 
+
 /**********Style for About Me**********/
 
-.about-me{
+.about-me {
     background: #607D8B;
     color: #ECEFF1;
     z-index: 900;
-    
+}
+
+.title {
+    text-align: center;
 }
 
 .img-circle {
@@ -103,36 +103,47 @@ body {
 }
 
 
-
 /**********Style for Experience**********/
-.experience{
+
+.experience {
     z-index: 800;
     position: relative;
 }
+
 .experience .row {
     padding: 15px;
 }
 
 
 /**********Style for Projects**********/
-.projects{
+
+.projects {
     background-color: cornsilk;
     z-index: 700;
     position: relative;
 }
 
 
+/**********Style for Skills**********/
+
+.progress-bar-label {
+    float: left;
+    font-weight: bold;
+    width: 20%;
+}
+
+
 /**********Style for Contacts**********/
+
 .contact {
     background-color: firebrick;
     color: white;
-    z-index: 600; 
+    z-index: 600;
 }
 
 .contact .row {
     text-align: center;
     padding-top: 10px;
-    
 }
 
 .contact .container {
@@ -144,17 +155,18 @@ body {
     color: white;
 }
 
-.icon:hover{
+.icon:hover {
     color: black;
     text-decoration: none;
 }
 
-
-
-.title {
-    text-align: center;
+#email {
+    padding-top: 15px;
+    font-size: 28px;
 }
 
-#nav-bar-content {
-    padding: 0px;
+@media (max-width:767px) {
+    #email {
+       font-size: 18px;
+    }
 }

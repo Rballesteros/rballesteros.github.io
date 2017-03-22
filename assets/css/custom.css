@@ -1,11 +1,7 @@
-h1 {}
-
 h2 {
     text-align: center;
     font-size: 55px;
 }
-
-h3 {}
 
 h4 {
     text-align: center;
@@ -102,6 +98,13 @@ body {
     border-radius: 80%;
 }
 
+@media (max-width: 767px) {
+    .img-circle {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
 
 /**********Style for Experience**********/
 
@@ -144,11 +147,11 @@ body {
     background-color: firebrick;
     color: white;
     z-index: 500;
+    text-align: center;
 }
 
-.contact .row {
-    text-align: center;
-    padding-top: 10px;
+#contact a {
+    padding: 10px;
 }
 
 .contact .container {

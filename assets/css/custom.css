@@ -175,6 +175,11 @@ body {
     color: white;
 }
 
+.resume:hover {
+    color: black;
+    text-decoration: none;
+}
+
 #email {
     padding-top: 15px;
     font-size: 28px;

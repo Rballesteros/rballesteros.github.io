@@ -1,193 +1,178 @@
-h2 {
-    text-align: center;
-    font-size: 55px;
-}
+/*!
+ * Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
 
-h4 {
-    text-align: center;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-.box-shadow {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.container {
-    padding-left: 125px;
-    padding-right: 125px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-@media (max-width:767px) {
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+ body {
+    font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    padding-top: 54px;
+    color: #868e96;
+  }
+  
+  @media (min-width: 992px) {
+    body {
+      padding-top: 0;
+      padding-left: 17rem;
     }
-}
-
-.navbar {
-    background-color: whitesmoke;
-    left: 2%;
-    top: 60px;
-    position: fixed;
-    padding: 0px;
-    border: none;
-    z-index: 1000;
-}
-
-#nav-bar-content {
-    padding: 0px;
-}
-
-@media (max-width: 767px) {
-    .navbar {
-        left: 0%;
-        top: 0px;
-        margin-bottom: 0px;
-        position: fixed;
-        width: 100%;
-        z-index: 1000;
-    }
-}
-
-.nav {
-    padding: 0px;
-}
-
-.navbar .nav>li a {
-    height: 70px;
-    text-align: center;
-    padding-top: 25px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     font-weight: 700;
-    color: black;
-}
-
-.active>a {
-    background: silver;
-}
-
-.terminal {
-    background-color: #000;
-    border: 1px solid #000;
-    color: #00ff00;
-    padding: 8px;
-    font-family: courier new;
-    height: 800px;
-}
-
-
-/**********Style for About Me**********/
-
-#aboutme {
-    background: #607D8B;
-    color: #ECEFF1;
-    z-index: 900;
-}
-
-.title {
+    text-transform: uppercase;
+    color: #343a40;
+  }
+  
+  h1 {
+    font-size: 5.5rem;
+    line-height: 5rem;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  p.lead {
+    font-size: 1.15rem;
+    font-weight: 400;
+  }
+  
+  .subheading {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 1.5rem;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff !important;
+    border-radius: 100%;
     text-align: center;
-}
-
-.img-circle {
-    border-radius: 80%;
-}
-
-@media (max-width: 767px) {
-    .img-circle {
-        width: 70%;
-        margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-right: 1rem;
+  }
+  
+  .social-icons a:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icons a:hover {
+    background-color: #82B1FF;
+  }
+  
+  .dev-icons {
+    font-size: 3rem;
+  }
+  
+  .dev-icons .list-inline-item i:hover {
+    color: #82B1FF;
+  }
+  
+  #sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+  }
+  
+  #sideNav .navbar-toggler:focus {
+    outline-color: #82B1FF;
+  }
+  
+  @media (min-width: 992px) {
+    #sideNav {
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      width: 17rem;
+      height: 100vh;
     }
-}
-
-
-/**********Style for Experience**********/
-
-#experience {
-    z-index: 800;
-    position: relative;
-}
-
-.experience .row {
-    padding: 15px;
-}
-
-
-/**********Style for Projects**********/
-
-#projects {
-    background-color: cornsilk;
-    z-index: 700;
-    position: relative;
-}
-
-
-/**********Style for Skills**********/
-
-#skills {
-    z-index: 600;
-    position: relative;
-}
-
-.progress-bar-label {
-    float: left;
-    font-weight: bold;
-    width: 20%;
-}
-
-
-/**********Style for Contacts**********/
-
-#contact {
-    background-color: firebrick;
-    color: white;
-    z-index: 500;
-    text-align: center;
-}
-
-#contact a {
-    padding: 10px;
-}
-
-.contact .container {
-    padding-bottom: 40px;
-}
-
-.icon {
-    font-size: 5em;
-    color: white;
-}
-
-.icon:hover {
-    color: black;
-    text-decoration: none;
-}
-
-.resume {
-    font-size: 4em;
-    position: relative;
-    bottom: 4px;
-    color: white;
-}
-
-.resume:hover {
-    color: black;
-    text-decoration: none;
-}
-
-#email {
-    padding-top: 15px;
-    font-size: 28px;
-}
-
-@media (max-width:767px) {
-    #email {
-        font-size: 17px;
+    #sideNav .navbar-brand {
+      display: flex;
+      margin: auto auto 0;
+      padding: 0.5rem;
     }
-}
-
+    #sideNav .navbar-brand .img-profile {
+      max-width: 10rem;
+      max-height: 10rem;
+      border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    }
+    #sideNav .navbar-collapse {
+      display: flex;
+      align-items: flex-start;
+      flex-grow: 0;
+      width: 100%;
+      margin-bottom: auto;
+    }
+    #sideNav .navbar-collapse .navbar-nav {
+      flex-direction: column;
+      width: 100%;
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item {
+      display: block;
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+      display: block;
+    }
+  }
+  
+  section.resume-section {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+    max-width: 75rem;
+  }
+  
+  section.resume-section .resume-item .resume-date {
+    min-width: none;
+  }
+  
+  @media (min-width: 768px) {
+    section.resume-section {
+      /* min-height: 100vh; */
+    }
+    section.resume-section .resume-item .resume-date {
+      min-width: 18rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    section.resume-section {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+    }
+  }
+  
+  .bg-primary {
+    background-color: #212121 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+  }
+  
+  .text-primary {
+    color: #9E9E9E !important;
+  }
+  
+  a {
+    color: #9E9E9E;
+  }
+  
+  a:hover, a:focus, a:active {
+    color: #82B1FF;
+  }
+  

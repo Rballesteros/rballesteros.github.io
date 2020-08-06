@@ -168,6 +168,11 @@
     color: #9E9E9E !important;
   }
   
+  .link {
+    color: #a7c8ff;
+    text-decoration: underline;
+  }
+
   a {
     color: #9E9E9E;
   }
